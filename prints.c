@@ -12,8 +12,8 @@ int printstr(char *format, va_list pa)
 	int contador;
 	(void)format;
 
-	if (string == NULL)
-		string = "(null)";
+	if (string == NULL) /* check for NULL */
+		string = "(null)"; /* check for NULL */
 	contador = _puts(string);
 	return (contador);
 }
