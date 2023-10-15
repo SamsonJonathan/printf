@@ -25,7 +25,7 @@ structype selector[] = {
 {NULL, NULL}
 };
 
-if (format[1] == ' ' || format[1] == '\0')
+if (format[1] == ' ' || format[1] == '\0') /* checking for NULL */
 return (NULL);
 for (i = 0; selector[i].q; i++)
 {
