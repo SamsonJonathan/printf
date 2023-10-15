@@ -9,6 +9,6 @@
 int printc(char *format, va_list pa)
 {
 	(void)format;
-	_putchar(va_arg(pa, int));
+	_putchar(va_arg(pa, int)); /* prints char */
 	return (1);
 }

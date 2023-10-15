@@ -11,5 +11,5 @@ int printpercent(char *format, va_list pa)
 	(void)format;
 	(void)pa;
 	_putchar('%');
-	return (1);
+	return (1); /* returns the bytes of percent printed */
 }
