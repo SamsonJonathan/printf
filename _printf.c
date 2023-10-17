@@ -19,11 +19,11 @@ int _printf(const char * const format, ...)
 	int i = 0, j, len = 0;
 
 	va_start(args, format);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))/* checking for te NULL char */
 		return (-1);
 
 Here:
-	while (format[i] != '\0')
+	while (format[i] != '\0')/* checking for te NULL char */
 	{
 		j = 13;
 		while (j >= 0)
@@ -41,5 +41,5 @@ Here:
 		i++;
 	}
 	va_end(args);
-	return (len);
+	return (len); /*return the length of formated string*/
 }

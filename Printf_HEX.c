@@ -5,7 +5,7 @@
  * @val: arguments.
  * Return: counter.
  */
-int printf_HEX(va_list val)
+int printf_HEX(va_list val)/* prints an hexgecimal number */
 {
 	int i;
 	int *array;
@@ -19,7 +19,7 @@ int printf_HEX(va_list val)
 		counter++;
 	}
 	counter++;
-	array = malloc(counter * sizeof(int));
+	array = malloc(counter * sizeof(int));/* malloc */
 
 	for (i = 0; i < counter; i++)
 	{
